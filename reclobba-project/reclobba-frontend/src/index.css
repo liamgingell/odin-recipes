@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 15%);
+  --foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 20%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --popover: hsl(0, 0%, 18%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 18%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 30%);
+  --input: hsl(0, 0%, 22%);
+  --primary: hsl(270, 60%, 55%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 20%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --accent: hsl(280, 70%, 65%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(270, 60%, 55%);
+  --radius: 0.5rem;
+
+  /* Custom colors for ReClobba - Purple & Dark Grey */
+  --primary-dark: hsl(260, 50%, 45%);
+  --text-gray: hsl(0, 0%, 60%);
+  --text-dark: hsl(0, 0%, 95%);
+  --purple-main: hsl(270, 60%, 55%);
+  --purple-light: hsl(280, 70%, 65%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --light-grey: hsl(0, 0%, 25%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 8%);
+  --foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 12%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 25%);
+  --input: hsl(0, 0%, 15%);
+  --primary: hsl(270, 65%, 60%);
+  --primary-foreground: hsl(0, 0%, 95%);
+  --secondary: hsl(0, 0%, 12%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --accent: hsl(280, 75%, 70%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(270, 65%, 60%);
+
+  /* Dark mode custom colors - Purple & Dark Grey */
+  --primary-dark: hsl(260, 55%, 50%);
+  --text-gray: hsl(0, 0%, 65%);
+  --text-dark: hsl(0, 0%, 95%);
+  --purple-main: hsl(270, 65%, 60%);
+  --purple-light: hsl(280, 75%, 70%);
+  --dark-grey: hsl(0, 0%, 8%);
+  --light-grey: hsl(0, 0%, 20%);
+}
+
+@layer base {
+  * {
+    @apply border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-gray-100 text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .text-primary-dark {
+    color: var(--primary-dark);
+  }
+
+  .text-text-gray {
+    color: var(--text-gray);
+  }
+
+  .text-text-dark {
+    color: var(--text-dark);
+  }
+
+  .text-purple-main {
+    color: var(--purple-main);
+  }
+
+  .text-purple-light {
+    color: var(--purple-light);
+  }
+
+  .text-dark-grey {
+    color: var(--dark-grey);
+  }
+
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .bg-primary-dark {
+    background-color: var(--primary-dark);
+  }
+
+  .bg-accent {
+    background-color: var(--accent);
+  }
+
+  .bg-purple-main {
+    background-color: var(--purple-main);
+  }
+
+  .bg-purple-light {
+    background-color: var(--purple-light);
+  }
+
+  .bg-dark-grey {
+    background-color: var(--dark-grey);
+  }
+
+  .bg-light-grey {
+    background-color: var(--light-grey);
+  }
+
+  .border-primary {
+    border-color: var(--primary);
+  }
+
+  .border-purple-main {
+    border-color: var(--purple-main);
+  }
+
+  .hover\:bg-primary-dark:hover {
+    background-color: var(--primary-dark);
+  }
+
+  .hover\:bg-purple-light:hover {
+    background-color: var(--purple-light);
+  }
+}
